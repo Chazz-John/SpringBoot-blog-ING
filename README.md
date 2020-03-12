@@ -7,5 +7,7 @@
 [jquery文档](http://www.jq22.com/jquery-info122)  
 
 ### 工具
-[git版本管理工具](https://git-scm.com/)  
-[visual paradigm流程图工具](https://www.visual-paradigm.com/cn/download/community.jsp)
+[版本管理工具git](https://git-scm.com/)  
+[流程图工具visual paradigm](https://www.visual-paradigm.com/cn/download/community.jsp)  
+[网络请求处理框架okhttp](https://square.github.io/okhttp/)  
+[h2数据库](https://mvnrepository.com/artifact/com.h2database/h2)  

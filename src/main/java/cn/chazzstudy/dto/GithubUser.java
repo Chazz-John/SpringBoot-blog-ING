@@ -1,4 +1,4 @@
-package cn.chazzstudy.controller.dto;
+package cn.chazzstudy.dto;
 
 /**
  * @Description

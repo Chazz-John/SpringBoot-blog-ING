@@ -1,7 +1,7 @@
-package cn.chazzstudy.controller.provider;
+package cn.chazzstudy.provider;
 
-import cn.chazzstudy.controller.dto.AccessTokenDTO;
-import cn.chazzstudy.controller.dto.GithubUser;
+import cn.chazzstudy.dto.AccessTokenDTO;
+import cn.chazzstudy.dto.GithubUser;
 import com.alibaba.fastjson.JSON;
 import okhttp3.*;
 import org.springframework.stereotype.Component;
