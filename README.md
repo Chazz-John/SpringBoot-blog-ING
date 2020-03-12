@@ -11,3 +11,4 @@
 [流程图工具visual paradigm](https://www.visual-paradigm.com/cn/download/community.jsp)  
 [网络请求处理框架okhttp](https://square.github.io/okhttp/)  
 [h2数据库](https://mvnrepository.com/artifact/com.h2database/h2)  
+[菜鸟教程mysql基础](https://www.runoob.com/mysql/mysql-where-clause.html)
