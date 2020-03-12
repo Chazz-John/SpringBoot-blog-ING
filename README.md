@@ -5,6 +5,7 @@
 [elastic中文社区](https://elasticsearch.cn/)  
 [bootstrap文档](https://v3.bootcss.com/)  
 [jquery文档](http://www.jq22.com/jquery-info122)  
+[springboot文档](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/reference/html/spring-boot-features.html#boot-features-spring-application)  
 
 ### 工具
 [版本管理工具git](https://git-scm.com/)  
@@ -13,8 +14,6 @@
 [h2数据库](https://mvnrepository.com/artifact/com.h2database/h2)  
 [springboot](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/reference/html/spring-boot-features.html#boot-features-spring-application)  
 [菜鸟教程](https://www.runoob.com/mysql/mysql-where-clause.html)  
-[菜鸟教程](https://www.runoob.com/mysql/mysql-where-clause.html)  
-[springboot](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/reference/html/spring-boot-features.html#boot-features-spring-application)  
 ### 脚本
 ```sql
 CREATE CACHED TABLE "PUBLIC"."USER"(
