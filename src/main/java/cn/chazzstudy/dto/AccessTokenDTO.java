@@ -1,7 +1,7 @@
 package cn.chazzstudy.dto;
 
 /**
- * @Description github请求数据对象
+ * 描述：github api的post请求数据对象
  * @Email 2741953539@qq.com
  * @Author Chazz
  * @date 2020.03.11 21:22
