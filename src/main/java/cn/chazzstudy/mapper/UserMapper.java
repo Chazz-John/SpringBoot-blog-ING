@@ -20,7 +20,7 @@ public interface UserMapper {
      * @Author: Chazz
      * @Date: 2020/3/13 11:39
      */
-    @Insert("insert into user (name,token,account_id,gtm_create,gtm_modified) values (#{name},#{token},#{accountId},#{gtmCreate},#{gtmModified})")
+    @Insert("insert into user (name,token,account_id,gtm_create,gtm_modified,avatar) values (#{name},#{token},#{accountId},#{gtmCreate},#{gtmModified},#{avatarUrl})")
     void insertUser(User user);
 
     /**

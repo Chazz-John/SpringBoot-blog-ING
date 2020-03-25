@@ -13,6 +13,7 @@
 [网络请求处理框架okhttp](https://square.github.io/okhttp/)  
 [h2数据库](https://mvnrepository.com/artifact/com.h2database/h2)  
 [菜鸟教程mysql数据库](https://www.runoob.com/mysql/mysql-where-clause.html)  
+[flyway数据库管理工具](https://flywaydb.org/getstarted/firststeps/maven)    
 ### 脚本
 ```sql
 CREATE TABLE USER(
@@ -23,4 +24,7 @@ CREATE TABLE USER(
     GTM_CREATE BIGINT,
     GTM_MODIFIED BIGINT
 );
+```
+```bash
+mvn flyway:migrate
 ```
