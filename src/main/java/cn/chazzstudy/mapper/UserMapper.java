@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 /**
  * 描述：数据库操作mapper
  * @Email 2741953539@qq.com
- * @Author Chazz
+ * @Author Chazz 
  * @date 2020.03.12 14:45
  */
 @Mapper

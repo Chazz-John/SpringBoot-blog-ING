@@ -15,12 +15,12 @@
 [菜鸟教程mysql数据库](https://www.runoob.com/mysql/mysql-where-clause.html)  
 ### 脚本
 ```sql
-CREATE CACHED TABLE "PUBLIC"."USER"(
-    "ID" INT PRIMARY KEY NOT NULL,
-    "ACCOUNT_ID" VARCHAR(100),
-    "NAME" VARCHAR(50),
-    "TOKEN" CHAR(36),
-    "GTM_CREATE" BIGINT,
-    "GTM_MODIFIED" BIGINT
-)
+CREATE TABLE USER(
+    ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    ACCOUNT_ID VARCHAR(100),
+    NAME VARCHAR(50),
+    TOKEN CHAR(36),
+    GTM_CREATE BIGINT,
+    GTM_MODIFIED BIGINT
+);
 ```
