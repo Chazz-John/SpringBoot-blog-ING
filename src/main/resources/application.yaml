@@ -10,11 +10,15 @@ spring:
     url: jdbc:h2:~/community
     driver-class-name: org.h2.Driver
 #thymeleaf关闭缓存
-  thymeleaf:
-    cache: false
+#  thymeleaf:
+#    cache: false
 #AccessTokenDTO对象数据
 github:
   client:
     id: bbe3f46a711cc212181e
     secret: f96a511f0320443eae5292f3973cb506fbc9f59f
     uri: http://localhost:8887/callback
+#mybatis配置信息
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

@@ -16,5 +16,5 @@ public class User {
     private String token;
     private long gtmCreate;
     private long gtmModified;
-    private String avatarUrl;
+    private String avatar;
 }

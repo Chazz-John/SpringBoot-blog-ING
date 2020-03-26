@@ -15,7 +15,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * 描述： TODO
+ * 描述： 处理发布页面的相关请求
  *
  * @Author Chazz
  * @date 2020/3/25 14:16
@@ -27,10 +27,30 @@ public class PublishController {
     private UserMapper userMapper;
     @Autowired(required = false)
     private QuestionMapper questionMapper;
+    /**
+     *功能描述:响应publish请求
+     * @param
+     * @return: java.lang.String——响应到publish页面
+     * @Author: Chazz
+     * @Date: 2020/3/26 20:15
+     */
     @GetMapping("/publish")
     public String publish(){
+
         return "publish";
     }
+
+    /**
+     *功能描述:提交发布的问题到数据库
+     * @param title——问题标题
+     * @param description——问题内容
+     * @param tag——问题标签
+     * @param request——页面缓存
+     * @param model
+     * @return: java.lang.String——响应路径
+     * @Author: Chazz
+     * @Date: 2020/3/26 20:05
+     */
     @PostMapping("/publish")
     public String dopublish(
             @RequestParam("title") String title,
@@ -39,6 +59,7 @@ public class PublishController {
             HttpServletRequest request,
             Model model
     ){
+        //对发布的内容进行判空
         model.addAttribute("title", title);
         model.addAttribute("description", description);
         model.addAttribute("tag", tag);
@@ -54,13 +75,14 @@ public class PublishController {
             model.addAttribute("error", "标签不能为空！");
             return "publish";
         }
+
         User user = null;
         //获取页面的cookie值
         Cookie[] cookies = request.getCookies();
         if (cookies != null){
             //通过循环判断，是否存在名为"token"的cookie值
             for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("token")){
+                if ("token".equals(cookie.getName())){
                     String token = cookie.getValue();
                     //如果存在token，则从数据库中查询出值token对应的user数据
                     user = userMapper.findByToken(token);
@@ -75,7 +97,9 @@ public class PublishController {
                 model.addAttribute("error", "用户未登录！");
                 return "publish";
             }
-        }
+        }//在发布问题之前判断用户是否登陆
+
+        //创建一个Question对象，存储发布问题的内容
         Question question = new Question();
         question.setTitle(title);
         question.setDescription(description);
@@ -83,6 +107,7 @@ public class PublishController {
         question.setCreator(user.getId());
         question.setGmtCreate(System.currentTimeMillis());
         question.setGmtModified(question.getGmtCreate());
+        //将Question对象插入数据库
         questionMapper.creat(question);
         return "redirect:/";
     }

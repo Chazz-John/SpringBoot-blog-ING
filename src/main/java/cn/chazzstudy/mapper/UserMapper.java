@@ -20,7 +20,7 @@ public interface UserMapper {
      * @Author: Chazz
      * @Date: 2020/3/13 11:39
      */
-    @Insert("insert into user (name,token,account_id,gtm_create,gtm_modified,avatar) values (#{name},#{token},#{accountId},#{gtmCreate},#{gtmModified},#{avatarUrl})")
+    @Insert("insert into user (name,token,account_id,gtm_create,gtm_modified,avatar) values (#{name},#{token},#{accountId},#{gtmCreate},#{gtmModified},#{avatar})")
     void insertUser(User user);
 
     /**
@@ -32,4 +32,6 @@ public interface UserMapper {
      */
     @Select("select * from user where token = #{token}")
     User findByToken(String token);
+    @Select("select * from user where id = #{id}")
+    User findById(Integer id);
 }

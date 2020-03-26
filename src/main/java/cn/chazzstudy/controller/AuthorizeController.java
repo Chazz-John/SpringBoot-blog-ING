@@ -70,7 +70,7 @@ public class AuthorizeController {
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setGtmCreate(System.currentTimeMillis());
             user.setGtmModified(user.getGtmCreate());
-            user.setAvatarUrl(githubUser.getAvatar_url());
+            user.setAvatar(githubUser.getAvatar_url());
             //将user封装完成后，将数据写入数据库
             userMapper.insertUser(user);
             //通过response向页面写入cookie，用于实现持久化登录
