@@ -10,8 +10,8 @@ spring:
     url: jdbc:h2:~/community
     driver-class-name: org.h2.Driver
 #thymeleaf关闭缓存
-#  thymeleaf:
-#    cache: false
+  thymeleaf:
+    cache: false
 #AccessTokenDTO对象数据
 github:
   client:
